@@ -7,23 +7,26 @@ int main() {
     p_conta vtrConta[MAX];
     int p = 0; //indica posicao (quantidade)
     init(vtrConta, MAX);
-    return 0;
+    int numProcurado;
 
     int accessMenu;
-    do{
-        //system("cls");
+    do {
+
+
+        system("cls");
         printf("CONTA\n");
         printf("1. Inserir Conta\n");
         printf("2. Alterar Conta\n");
-        printf("3. Comprar Produto\n");
-        printf("4. Vender Produto\n");
-        printf("5. Estoque de Produto\n");
-        printf("6. Patrimonio Estocado \n");
-        printf("7. Listar todos os produtos\n");
+        printf("3. Procurar Conta\n");
+        printf("4. Listar Conta\n");
+        printf("5. Depositar\n");
+        printf("6. Sacar\n");
+        printf("7. Imprimir Dados da Conta\n");
+        printf("8. Saldo Geral\n");
         printf("9. Sair \n");
         printf("Digite sua opcao:  \n");
         scanf("%d", &accessMenu);
-        switch(accessMenu){
+        switch (accessMenu) {
             case 1:
                 inserir(vtrConta, p);
                 p++;
@@ -35,20 +38,27 @@ int main() {
                 procurarConta(vtrConta, p);
                 break;
             case 4:
-                vender(vtrProdutos, p);
+                listar(vtrConta, p);
                 break;
             case 5:
-                listarProdutoUnico(vtrProdutos, p);
+                depositar(vtrConta, p);
                 break;
             case 6:
-                verificarPatrimonio(vtrProdutos, p);
+                sacar(vtrConta, p);
                 break;
             case 7:
-                imprimir(vtrProdutos, p);
+                imprimir(vtrConta, p);
+                break;
+            case 8:
+                saldoGeral(vtrConta, p);
                 break;
             case 9:
                 printf("Fim do programa \n");
                 exit(0);
         }
-    }while(accessMenu!=9);
+
+    } while (accessMenu != 9);
+
+    return 0;
 }
+
