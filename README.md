@@ -6,7 +6,7 @@
 - Struct, 
 - Função, 
 - Arrays etc.
-
+---
 📌 Integrantes do grupo:
 - Adryan Andre
 - Bruno Ricardo Ferreira
