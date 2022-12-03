@@ -1,5 +1,5 @@
 <img src = "giphy_programming.gif" width = "325px" align = "right">
-# 👾Atividade final Linguagem de Programação👾 #
+# 👾Atividade final Linguagem de Programação👾
  
 💻 Técnicas utilizadas no desenvolvimento: 
 - Ponteiro, 
